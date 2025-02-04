@@ -11,9 +11,25 @@
       자바스크립트의 컴파일 언어
 
       npm init -y : 노드 실행
-      npm i @types/node : 패키지 매니저 설치
+      npm i @types/node : 노드 모듈 생성
       npm i typescript : 타입스크립트 컴파일링 패키지 매니저
-      npm i : 노드 모듈 생성
+      맥 : sudo npm i typescript
+      맥 : sudo npm i typescript -g 전역으로도 설치
+      tsc script.ts : 타입스크립트 컴파일링
+      npm i tsx : 타입스크립트 실행
+      sudo npm i tsx -g : 글로벌
+      tsx script.js : 타입스크립트 실행 
+      tsc --init : 타입스크립트 컴파일러 옵션 초기화
+      
+      tsconfig에
+      {
+        "include": ["src"]
+      }
+        
+      package.json의 scripts에  "ts_node": "tsc && tsx src/script.ts"로 둘다 실행하는 예약어 생성
+      npm run ts_node : 생성한 예약어 실행
+
+      윈도우 : powershell 관리자 권한 -> get-help Set-ExecutionPolicy 입력 -> y입력 -> set-ExecutionPolicy RemoteSigned
       프로젝트끝나면 노드 모듈 지우기
     -->
   </body>
